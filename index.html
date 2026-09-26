@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="logo">SHOES.</div>
+        <nav>
+            <div class="home">Home</div>
+            <div class="products">Products</div>
+            <div class="about">About</div>
+        </nav>
+    </header>
+    
+    <!-- Content -->
+    <main>
+        
+        <div class="card" id="productCard">
+            <div class="image-container">
+                <img src="assets/shoesimg.avif" alt="Air Runner">
+            </div>
+
+            <div class="product-details">
+                <div>
+                    <div class="category">RUNNING SHOES</div>
+                    <h1 class="p-title">Air Runner</h1>
+                    <p class="desc">Sepatu ringan dan nyaman untuk digunakan saat berolahraga maupun aktivitas sehari-hari</p>
+                </div>
+                <div class="price">Rp 899.000</div>
+
+                <div class="color-selection">
+                    <span class="color-label">Pilih Warna:</span>
+                    <div class="color-options">
+                        <button class="color-btn btn-black" onclick="changeBgColor('#DDDDDD')"></button>
+                        <button class="color-btn btn-blue" onclick="changeBgColor('#CFE2FF')"></button>
+                        <button class="color-btn btn-cream" onclick="changeBgColor('#F5E6CC')"></button>   
+                    </div>
+                </div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
